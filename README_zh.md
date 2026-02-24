@@ -156,8 +156,8 @@ python examples/hoppy_adventure.py
 
 ```bash
 # 克隆这个仓库
-git clone https://github.com/hoppy-py/hoppypy.git
-cd hoppypy
+git clone https://github.com/gdgd8760/hoppypy-repo.git
+cd hoppypy-repo
 
 # 运行示例
 python examples/01_hello_hoppy.py

@@ -156,8 +156,8 @@ Want to run the examples locally?
 
 ```bash
 # Clone this repo
-git clone https://github.com/hoppy-py/hoppypy.git
-cd hoppypy
+git clone https://github.com/gdgd8760/hoppypy-repo.git
+cd hoppypy-repo
 
 # Run an example
 python examples/01_hello_hoppy.py
