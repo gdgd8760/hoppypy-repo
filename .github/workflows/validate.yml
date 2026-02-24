@@ -1,0 +1,42 @@
+name: ✅ Validate Examples
+
+on:
+  push:
+    branches: [main]
+    paths: ["examples/**"]
+  pull_request:
+    branches: [main]
+    paths: ["examples/**"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: ✅ Validate example scripts (syntax check)
+        run: |
+          echo "🐸 Validating Python examples..."
+          for file in examples/01_hello_hoppy.py examples/02_data_structures.py examples/03_build_something.py; do
+            echo "  Checking $file..."
+            python -c "import py_compile; py_compile.compile('$file', doraise=True)"
+            echo "  ✅ $file OK"
+          done
+          echo "🎉 All examples validated!"
+
+      - name: 🚀 Run non-interactive examples
+        run: |
+          echo "🐸 Running example scripts..."
+          python examples/01_hello_hoppy.py
+          python examples/02_data_structures.py
+          python examples/03_build_something.py
+          echo "🎉 All examples ran successfully!"

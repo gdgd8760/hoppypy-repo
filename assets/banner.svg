@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#141b2d;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00cc6a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="250" fill="url(#bg)" rx="12"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="250" stroke="#00ff88" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative dots -->
+  <circle cx="680" cy="60" r="40" fill="#00ff88" opacity="0.03"/>
+  <circle cx="120" cy="190" r="60" fill="#c084fc" opacity="0.03"/>
+
+  <!-- Frog emoji  -->
+  <text x="115" y="140" font-size="70" text-anchor="middle" filter="url(#softglow)">🐸</text>
+
+  <!-- Main title -->
+  <text x="400" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" fill="url(#glow)" text-anchor="middle" filter="url(#neon)" letter-spacing="2">
+    HoppyPy
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#8892b0" text-anchor="middle" letter-spacing="1">
+    Learn Python &amp; AI Programming the Hoppy Way
+  </text>
+
+  <!-- Tags -->
+  <rect x="225" y="170" width="90" height="26" rx="13" fill="#00ff88" opacity="0.12"/>
+  <text x="270" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#00ff88" text-anchor="middle" font-weight="600">100% Free</text>
+
+  <rect x="330" y="170" width="90" height="26" rx="13" fill="#c084fc" opacity="0.12"/>
+  <text x="375" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#c084fc" text-anchor="middle" font-weight="600">Interactive</text>
+
+  <rect x="435" y="170" width="120" height="26" rx="13" fill="#ff6b9d" opacity="0.12"/>
+  <text x="495" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#ff6b9d" text-anchor="middle" font-weight="600">Browser-based</text>
+
+  <!-- Bottom accent line -->
+  <rect x="300" y="215" width="200" height="2" fill="url(#glow)" rx="1" opacity="0.5"/>
+</svg>
