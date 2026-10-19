@@ -22,7 +22,7 @@
 
 > **Forget installations. Forget boring lectures. Just open your browser and start coding.**
 
-HoppyPy is a **100% free**, gamified, interactive platform designed for **absolute beginners** to learn Python and AI programming — right in the browser, no setup required.
+HoppyPy is a **100% free**, interactive Python course for **absolute beginners**. No sign-up and nothing to install: you write and run real Python right in your browser (powered by [Pyodide](https://pyodide.org)), one small lesson at a time, guided by Hoppy the frog.
 
 > [!TIP]
 > **🤖 NEW: [Vibe Coding Prompt Templates](./vibe-coding)** — A curated collection of copy-paste prompts for AI-Native IDEs. Build web apps, automate tasks, and create AI agents — all with natural language. _Inspired by Andrej Karpathy's Vibe Coding philosophy._
@@ -35,9 +35,10 @@ HoppyPy is a **100% free**, gamified, interactive platform designed for **absolu
 | --- | --------------------------------------------- | ----------------------------------------------------------------- |
 | 🎮  | **Gamified Learning**                         | Progress through themed adventures, earn XP, level up your skills |
 | 🌐  | **Browser-Based**                             | No installation. No environment setup. Just click and code        |
-| 🤖  | **AI Programming**                            | Learn to orchestrate LLMs and build agents from day one           |
-| 🆓  | **100% Free**                                 | No paywalls, no premium tiers. Quality education for everyone     |
-| 🌍  | **Bilingual**                                 | Full English + Chinese support                                    |
+| 🤖  | **Work with AI**                              | A dedicated track on directing AI agents and checking their code  |
+| 🆓  | **100% Free**                                 | No paywalls, no premium tiers, no ads                             |
+| 🔓  | **No Account Needed**                         | No sign-up. Your progress is saved in your own browser            |
+| 🌍  | **Bilingual**                                 | Every lesson is available in English and Chinese                  |
 | ⚡  | **Interactive Sandbox**                       | Write, run, and experiment with real Python code instantly        |
 | 📝  | **[Prompt Templates](./vibe-coding/prompts)** | Ready-to-use Vibe Coding prompts for AI-Native IDEs               |
 
@@ -45,29 +46,34 @@ HoppyPy is a **100% free**, gamified, interactive platform designed for **absolu
 
 ## 🗺️ Learning Path
 
-A structured journey from zero to Python + AI proficiency:
+Every HoppyPy course sits on one course tree. Start with the **Core Path** to build solid Python basics, then branch out into what interests you. Complete beginners simply start with the first course.
 
 ```mermaid
 graph LR
-    A["🌱 Series 1\nThe Novice"] --> B["🏗️ Series 2\nThe Architect"]
-    B --> C["🧩 Series 3\nAlgorithm Hunter"]
-    C --> D["📊 Series 4\nData Wizard"]
-    D --> E["🤖 Series V\nAI Programming"]
+    S1["🌱 Hoppy's First Leap<br/>37 lessons"] --> S2["🏗️ The Architect<br/>34 lessons"]
+    S2 --> S3["🧩 The Data Tinkerer<br/>41 lessons · early access"]
+    S3 --> S4["🛰️ The Automation Scout<br/>coming soon"]
+    S4 --> B4["🤖 The Vibe Coder<br/>branch · early access"]
+    S4 -.-> BR["🌿 More branches<br/>algorithms · data · web & APIs · games"]
 
-    style A fill:#0a2e1a,stroke:#00ff88,color:#00ff88
-    style B fill:#0a2e1a,stroke:#00ff88,color:#00ff88
-    style C fill:#1a1a2e,stroke:#c084fc,color:#c084fc
-    style D fill:#1a1a2e,stroke:#c084fc,color:#c084fc
-    style E fill:#2e1a2a,stroke:#ff6b9d,color:#ff6b9d
+    style S1 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S2 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S3 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S4 fill:#1a1a2e,stroke:#c084fc,color:#c084fc
+    style B4 fill:#2e1a2a,stroke:#ff6b9d,color:#ff6b9d
+    style BR fill:#1a1a2e,stroke:#c084fc,color:#c084fc
 ```
 
-| Series | Title               | What You'll Learn                     |                                                                               |
-| ------ | ------------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
-| **1**  | 🌱 The Novice       | Variables, strings, loops, conditions | [Start →](https://www.hoppypy.com/en/learn/python-basics/01-hoppy-speaks)     |
-| **2**  | 🏗️ The Architect    | Functions, modules, file handling     | [Start →](https://www.hoppypy.com/en/learn/python-architect/00-the-workshop)  |
-| **3**  | 🧩 Algorithm Hunter | Data structures, recursion, sorting   | 🔜 Coming Soon                                                                |
-| **4**  | 📊 Data Wizard      | Pandas, Matplotlib, data analysis     | 🔜 Coming Soon                                                                |
-| **V**  | 🤖 AI Programming   | LLM orchestration, agents, 10x dev    | [Start →](https://www.hoppypy.com/en/learn/python-vibe/01-choose-your-weapon) |
+| Track | Course | What you'll learn | |
+| --- | --- | --- | --- |
+| Core Path | 🌱 **Hoppy's First Leap** · 37 lessons | print, variables, strings, conditions, loops, lists, dictionaries, your first functions, plus three small real-world labs | [Start →](https://www.hoppypy.com/en/learn/python-basics/01-hoppy-speaks) |
+| Core Path | 🏗️ **The Architect** · 34 lessons | Functions in depth, errors and exceptions, modules, classes and objects, reading and writing files, and office-style projects | [Start →](https://www.hoppypy.com/en/learn/python-architect/00-the-workshop) |
+| Core Path | 🧩 **The Data Tinkerer** · 41 lessons · early access | Text cleanup, tuples and sets, counting, comprehensions, JSON and CSV, and tidying messy real-world data | [Start →](https://www.hoppypy.com/en/learn/python-data-tinkerer/01-the-dusty-note) |
+| Core Path | 🛰️ **The Automation Scout** | Command line, files and folders, environments, APIs, and debugging | 🔜 Coming soon |
+| Branch | 🤖 **The Vibe Coder** · early access | Directing AI agents to build things for you, and checking what they write | [Start →](https://www.hoppypy.com/en/learn/python-vibe/01-choose-your-weapon) |
+| Branches | 🌿 More on the way | The Algorithm Hunter, The Data Wizard, The API Builder, The Workflow Smith, The Playmaker | 🔜 Planned |
+
+👉 See the full, always up-to-date map on the **[learning roadmap](https://www.hoppypy.com/en/courses)**.
 
 <br/>
 
@@ -75,7 +81,7 @@ graph LR
 
 Get a taste of what you'll learn. All examples are runnable — try them out!
 
-### 🌱 Hello Hoppy (Series 1)
+### 🌱 Hello Hoppy (Hoppy's First Leap)
 
 ```python
 # Your first Python script — meet Hoppy! 🐸
@@ -95,7 +101,7 @@ print("""
 """)
 ```
 
-### 🏗️ Data Structures (Series 2)
+### 🎒 Lists & Dictionaries (Hoppy's First Leap)
 
 ```python
 # Build a quest system with lists and dicts 🗺️
@@ -109,19 +115,23 @@ total_xp = sum(q["reward"] for q in completed)
 print(f"📈 Progress: {len(completed)}/{len(quests)} | 💰 XP: {total_xp}")
 ```
 
-### 🤖 AI Programming (Series V)
+### 🧩 Tidying Messy Data (The Data Tinkerer)
 
 ```python
-# Orchestrate AI agents to build apps 🚀
-# This is what "Vibe Coding" looks like
+# Clean up a messy sign-up sheet 🧹
+raw = """name,email
+  Alice ,ALICE@example.com
+bob,bob@Example.com
+  Alice ,alice@example.com"""
 
-from langchain import ChatOpenAI, PromptTemplate
-
-agent = ChatOpenAI(model="gpt-4")
-prompt = PromptTemplate("Analyze this data: {data}")
-
-# One prompt, infinite possibilities
-result = agent.invoke(prompt.format(data=sales_report))
+rows = raw.splitlines()[1:]          # skip the header row
+seen = set()
+for row in rows:
+    name, email = row.split(",")
+    email = email.strip().lower()
+    if email not in seen:            # drop duplicates
+        seen.add(email)
+        print(f"{name.strip().title()} <{email}>")
 ```
 
 > 📂 More complete examples in the [`examples/`](./examples) directory
@@ -193,6 +203,17 @@ python examples/hoppy_adventure.py
 
 <br/>
 
+## 🐸 About HoppyPy
+
+HoppyPy launched in December 2025 and is an independent, one-person project. Read **[About HoppyPy](https://www.hoppypy.com/en/about)** for the story behind it and answers to common questions, or leave a note on the **[feedback page](https://www.hoppypy.com/en/feedback)**.
+
+**The Hoppy family**
+
+- 📈 **[HoppyQuant](https://quant.hoppypy.com/en)** — learn quantitative research with AI, starting with understanding data.
+- 💬 **[HoppyChat](https://chat.hoppypy.com/)** — learn English like following a drama series (Chinese only).
+
+<br/>
+
 ## 🤝 Contributing
 
 We welcome contributions! Whether it's fixing typos, adding examples, or suggesting new lessons.
@@ -215,6 +236,6 @@ This project is licensed under the [MIT License](./LICENSE).
 </p>
 
 <p align="center">
-  Made with 💚 by the HoppyPy Team<br/>
+  Made with 💚 by HoppyPy<br/>
   <sub>If you find this helpful, please ⭐ star this repo — it helps more people discover free Python education!</sub>
 </p>

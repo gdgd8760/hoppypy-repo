@@ -22,7 +22,7 @@
 
 > **忘掉安装、忘掉环境配置、忘掉枯燥的视频课。打开浏览器，直接开始敲代码。**
 
-HoppyPy 是一个 **完全免费** 的游戏化互动编程学习平台，专为 **零基础** 学习者设计 —— 在浏览器中直接学习 Python 和 AI 编程，无需任何安装。
+HoppyPy 是一个 **完全免费** 的零基础 Python 互动学习网站。不用注册，也不用安装：打开浏览器就能写代码、运行代码（基于 [Pyodide](https://pyodide.org)），跟着小青蛙 Hoppy 一关一关把 Python 学会。
 
 > [!TIP]
 > **🤖 新上线：[Vibe Coding Prompt 模板库](./vibe-coding)** — 精心整理的 AI 原生 IDE 实用 Prompt，复制粘贴即可用。用自然语言构建 Web 应用、自动化任务、创建 AI 智能体。_灵感来自 Andrej Karpathy 的 Vibe Coding 哲学。_
@@ -32,42 +32,48 @@ HoppyPy 是一个 **完全免费** 的游戏化互动编程学习平台，专为
 ## ✨ 为什么选择 HoppyPy？
 
 |     | 特性                                       | 描述                                                  |
-| --- | ------------------------------------------ | ----------------------------------------------------- | --- |
+| --- | ------------------------------------------ | ----------------------------------------------------- |
 | 🎮  | **游戏化学习**                             | 跟着冒险故事线推进，收集经验值，解锁新技能            |
 | 🌐  | **浏览器即开即学**                         | 无需安装 Python，无需配置环境，点击就能写代码         |
-| 🤖  | **AI 编程实战**                            | 从入门就学会操控大模型，构建 AI 智能体                |
-| 🆓  | **100% 免费**                              | 没有付费墙，没有高级会员。好的教育应该免费            |
-| 🌍  | **中英双语**                               | 完整的中文 + 英文支持                                 |
+| 🤖  | **和 AI 协作**                             | 专门的分支课，学会指挥 AI Agent，并检查它写的代码     |
+| 🆓  | **100% 免费**                              | 没有付费墙，没有高级会员，也没有广告                  |
+| 🔓  | **不用注册**                               | 打开就能学，学习进度保存在你自己的浏览器里            |
+| 🌍  | **中英双语**                               | 每节课都有中文和英文两个版本                          |
 | ⚡  | **互动沙箱**                               | 实时编写、运行、试验真正的 Python 代码                |
-| 📝  | **[Prompt 模板库](./vibe-coding/prompts)** | 现成的 Vibe Coding Prompt，复制粘贴到 AI IDE 即可使用 |     |
+| 📝  | **[Prompt 模板库](./vibe-coding/prompts)** | 现成的 Vibe Coding Prompt，复制粘贴到 AI IDE 即可使用 |
 
 <br/>
 
 ## 🗺️ 学习路线
 
-从零开始，一路进阶到 Python + AI 全栈能力：
+HoppyPy 的所有课程连成一棵课程树：先走 **主干**，把 Python 基础学扎实；再按兴趣走进专项分支。零基础从第一门课开始就好。
 
 ```mermaid
 graph LR
-    A["🌱 第一章\n新手村"] --> B["🏗️ 第二章\n架构师"]
-    B --> C["🧩 第三章\n算法猎人"]
-    C --> D["📊 第四章\n数据法师"]
-    D --> E["🤖 终章\nAI 编程"]
+    S1["🌱 编程觉醒<br/>37 节"] --> S2["🏗️ 构建者<br/>34 节"]
+    S2 --> S3["🧩 数据与文本工具<br/>41 节 · 抢先体验"]
+    S3 --> S4["🛰️ 自动化与网络世界<br/>即将开放"]
+    S4 --> B4["🤖 AI 与 Agent 协作<br/>分支 · 抢先体验"]
+    S4 -.-> BR["🌿 更多分支<br/>算法 · 数据分析 · Web 与 API · 游戏"]
 
-    style A fill:#0a2e1a,stroke:#00ff88,color:#00ff88
-    style B fill:#0a2e1a,stroke:#00ff88,color:#00ff88
-    style C fill:#1a1a2e,stroke:#c084fc,color:#c084fc
-    style D fill:#1a1a2e,stroke:#c084fc,color:#c084fc
-    style E fill:#2e1a2a,stroke:#ff6b9d,color:#ff6b9d
+    style S1 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S2 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S3 fill:#0a2e1a,stroke:#00ff88,color:#00ff88
+    style S4 fill:#1a1a2e,stroke:#c084fc,color:#c084fc
+    style B4 fill:#2e1a2a,stroke:#ff6b9d,color:#ff6b9d
+    style BR fill:#1a1a2e,stroke:#c084fc,color:#c084fc
 ```
 
-| 系列  | 标题        | 你将学到                           |                                                                              |
-| ----- | ----------- | ---------------------------------- | ---------------------------------------------------------------------------- |
-| **1** | 🌱 新手村   | 变量、字符串、循环、条件判断       | [开始 →](https://www.hoppypy.com/zh/learn/python-basics/01-hoppy-speaks)     |
-| **2** | 🏗️ 架构师   | 函数、模块、文件读写               | [开始 →](https://www.hoppypy.com/zh/learn/python-architect/00-the-workshop)  |
-| **3** | 🧩 算法猎人 | 数据结构、递归、排序算法           | 🔜 即将推出                                                                  |
-| **4** | 📊 数据法师 | Pandas、Matplotlib、数据分析       | 🔜 即将推出                                                                  |
-| **V** | 🤖 AI 编程  | 大模型编排、Agent 构建、10x 生产力 | [开始 →](https://www.hoppypy.com/zh/learn/python-vibe/01-choose-your-weapon) |
+| 区域 | 课程 | 你将学到 | |
+| --- | --- | --- | --- |
+| 主干 | 🌱 **编程觉醒** · 37 节 | print、变量、字符串、条件判断、循环、列表、字典、第一个函数，以及三个小小的现实练习 | [开始 →](https://www.hoppypy.com/zh/learn/python-basics/01-hoppy-speaks) |
+| 主干 | 🏗️ **构建者** · 34 节 | 深入函数、错误与异常、模块、类与对象、文件读写，以及办公场景的小项目 | [开始 →](https://www.hoppypy.com/zh/learn/python-architect/00-the-workshop) |
+| 主干 | 🧩 **数据与文本工具** · 41 节 · 抢先体验 | 文本清理、元组与集合、计数、推导式、JSON 与 CSV，以及整理真实世界里的乱数据 | [开始 →](https://www.hoppypy.com/zh/learn/python-data-tinkerer/01-the-dusty-note) |
+| 主干 | 🛰️ **自动化与网络世界** | 命令行、文件与目录、运行环境、API、调试 | 🔜 即将开放 |
+| 分支 | 🤖 **AI 与 Agent 协作** · 抢先体验 | 学会指挥 AI Agent 帮你写代码，并检查它写得对不对 | [开始 →](https://www.hoppypy.com/zh/learn/python-vibe/01-choose-your-weapon) |
+| 分支 | 🌿 更多方向 | 算法与问题求解、数据处理与分析、Web 与 API 工具、自动化工具链、创意编程与游戏 | 🔜 规划中 |
+
+👉 完整、实时更新的路线请看 **[Python 学习路线图](https://www.hoppypy.com/zh/courses)**。
 
 <br/>
 
@@ -75,7 +81,7 @@ graph LR
 
 感受一下你将要学到的东西。所有示例都可以直接运行！
 
-### 🌱 Hello Hoppy（第一章预览）
+### 🌱 Hello Hoppy（编程觉醒）
 
 ```python
 # 你的第一个 Python 脚本 —— 遇见 Hoppy！🐸
@@ -95,7 +101,7 @@ print("""
 """)
 ```
 
-### 🏗️ 数据结构（第二章预览）
+### 🎒 列表与字典（编程觉醒）
 
 ```python
 # 用列表和字典构建任务系统 🗺️
@@ -109,19 +115,23 @@ total_xp = sum(q["reward"] for q in completed)
 print(f"📈 进度: {len(completed)}/{len(quests)} | 💰 经验值: {total_xp}")
 ```
 
-### 🤖 AI 编程（终章预览）
+### 🧩 整理乱数据（数据与文本工具）
 
 ```python
-# 编排 AI 智能体来构建应用 🚀
-# 这就是"氛围编程 (Vibe Coding)"的样子
+# 清理一份乱糟糟的报名表 🧹
+raw = """name,email
+  Alice ,ALICE@example.com
+bob,bob@Example.com
+  Alice ,alice@example.com"""
 
-from langchain import ChatOpenAI, PromptTemplate
-
-agent = ChatOpenAI(model="gpt-4")
-prompt = PromptTemplate("分析这份数据: {data}")
-
-# 一个提示词，无限可能
-result = agent.invoke(prompt.format(data=sales_report))
+rows = raw.splitlines()[1:]          # 跳过表头
+seen = set()
+for row in rows:
+    name, email = row.split(",")
+    email = email.strip().lower()
+    if email not in seen:            # 去掉重复的人
+        seen.add(email)
+        print(f"{name.strip().title()} <{email}>")
 ```
 
 > 📂 更多完整示例请查看 [`examples/`](./examples) 目录
@@ -140,7 +150,7 @@ python examples/hoppy_adventure.py
 
 <br/>
 
-## � Python 速查表
+## 📋 Python 速查表
 
 我们还准备了一份 **中英双语 Python 速查表** —— 随时查阅的利器！
 
@@ -148,7 +158,7 @@ python examples/hoppy_adventure.py
 
 <br/>
 
-## �🚀 快速开始
+## 🚀 快速开始
 
 无需安装任何东西！直接访问 **[hoppypy.com](https://www.hoppypy.com/zh)** 开始学习。
 
@@ -193,6 +203,17 @@ python examples/hoppy_adventure.py
 
 <br/>
 
+## 🐸 关于 HoppyPy
+
+HoppyPy 于 2025 年 12 月上线，由站长一人独立维护。想知道它为什么会出现、有哪些常见问题，可以看看 **[关于 HoppyPy](https://www.hoppypy.com/zh/about)**；有想法也欢迎到 **[留言与建议](https://www.hoppypy.com/zh/feedback)** 告诉我们。
+
+**Hoppy 家族**
+
+- 💬 **[HoppyChat](https://chat.hoppypy.com/)** —— 像追剧一样免费学英语，跟着 Hoppy 去英语小镇留学。
+- 📈 **[HoppyQuant](https://quant.hoppypy.com/zh)** —— 借助 AI，从理解数据开始学习量化研究。
+
+<br/>
+
 ## 🤝 参与贡献
 
 我们欢迎一切形式的贡献！无论是修复错别字、添加示例，还是提出新课程建议。
@@ -215,6 +236,6 @@ python examples/hoppy_adventure.py
 </p>
 
 <p align="center">
-  由 HoppyPy 团队用 💚 打造<br/>
+  由 HoppyPy 用 💚 打造<br/>
   <sub>如果觉得有帮助，请 ⭐ Star 这个仓库 —— 帮助更多人发现免费的 Python 教育资源！</sub>
 </p>
